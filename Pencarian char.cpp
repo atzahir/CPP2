@@ -79,6 +79,5 @@ int main()
         cout<<jml<<" Data Ditemukan !!!";
     else
         cout<<" Data Tidak Ditemukan !!!";
-
     getch();
   }
