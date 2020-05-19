@@ -31,9 +31,9 @@ main(int argc, char const *argv[])
 		cout<<"NIM      : ";
 		cin>>mhs[i].nim[i].nomorinduk;
 		cout<<"Nama     : ";
-		cin>>mhs[i].nama;
+		getline(cin>>ws, mhs[i].nama);
 		cout<<"Prodi    : ";
-		cin>>mhs[i].nim[i].prodi;
+		getline(cin>>ws, mhs[i].nim[i].prodi);
 		cout<<"Angkatan : ";
 		cin>>mhs[i].nim[i].angkatan;
 		system("cls");
@@ -49,5 +49,4 @@ main(int argc, char const *argv[])
 	}
 	getch();
 	return 0;
-	
 }
