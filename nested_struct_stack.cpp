@@ -66,7 +66,7 @@ void push(string nim, string nama, string prodi, float ipk)
 }
 
 void pop()
-	{
+{
 	if (isEmpty())
 	{
 		cout<<"Stack Kosong"<<endl<<endl;
