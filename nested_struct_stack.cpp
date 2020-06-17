@@ -95,27 +95,27 @@ void show()
 			cout<<"Nama        : "<<mhs[i].nama<<endl;
 			cout<<"Prodi       : "<<mhs[i].prodi<<endl;
 			cout<<"IPK         : "<<mhs[i].nilai.ipk<<endl;
-			if (mhs[i].nilai.ipk>3.2)
+			if (mhs[i].nilai.ipk>=4)
 			{
 				cout<<"Keterangan  : A";
 				cout<<endl<<endl;
 			}
-			else if (mhs[i].nilai.ipk>2.4)
+			else if (mhs[i].nilai.ipk>=3)
 			{
 				cout<<"Keterangan  : B";
 				cout<<endl<<endl;
 			}
-			else if (mhs[i].nilai.ipk>1.6)
+			else if (mhs[i].nilai.ipk>=2)
 			{
 				cout<<"Keterangan  : C";
 				cout<<endl<<endl;
 			}
-			else if (mhs[i].nilai.ipk>0.8)
+			else if (mhs[i].nilai.ipk>=1)
 			{
 				cout<<"Keterangan  : D";
 				cout<<endl<<endl;
 			}
-			else if (mhs[i].nilai.ipk>0)
+			else if (mhs[i].nilai.ipk>=0)
 			{
 				cout<<"Keterangan  : E";
 				cout<<endl<<endl;
@@ -133,6 +133,14 @@ int main()
 
 	menu:
 	system("cls");
+	cout<<"==========================================="<<endl;
+	cout<<"||                                       ||"<<endl;
+	cout<<"||                                       ||"<<endl;
+	cout<<"||         AKHMAD TAAJUDDIN ZAHIR        ||"<<endl;
+	cout<<"||               19.11.3139              ||"<<endl;
+	cout<<"||                                       ||"<<endl;
+	cout<<"||                                       ||"<<endl;
+	cout<<"==========================================="<<endl<<endl;
 	cout<<"1. Push"<<endl;
 	cout<<"2. Pop"<<endl;
 	cout<<"3. Show"<<endl;
@@ -141,6 +149,7 @@ int main()
 
 	cout<<"Pilihan : ";
 	cin>>pilih;
+	cout<<endl;
 
 	switch(pilih)
 	{
@@ -153,6 +162,12 @@ int main()
 		getline(cin>>ws, prodi);
 		cout<<"Masukkan IPK : ";
 		cin>>ipk;
+		if (ipk>4)
+		{
+			cout<<"\nData yang anda masukkan salah!!"<<endl;
+			system("pause");
+			goto menu;
+		}
 		push(nim,nama,prodi,ipk);
 		goto menu;
 		break;
