@@ -150,7 +150,7 @@ int main()
 		cout<<"Masukkan Nama : ";
 		getline(cin>>ws, nama);
 		cout<<"Masukkan Prodi : ";
-		cin>>prodi;
+		getline(cin>>ws, prodi);
 		cout<<"Masukkan IPK : ";
 		cin>>ipk;
 		push(nim,nama,prodi,ipk);
